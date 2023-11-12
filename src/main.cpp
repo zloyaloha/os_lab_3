@@ -140,7 +140,7 @@ int main() {
         shm_unlink("error");
         munmap(shared_input, SHARED_MEMORY_SIZE);
         shm_unlink("input");
-        perror("fork")
+        perror("fork");
     }
 
     munmap(shared_error, SHARED_MEMORY_SIZE);
